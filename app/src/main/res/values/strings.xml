@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EnRoute</string>
+
+
+    <string name="aboutus">IoT Alliance is a not for profit student club that a group of faculty and
+students kick started with an internship on Embedded Systems in 2014.
+Later, to travel along the trend, the team started to gain expertise about IoT (Internet of Things). Hence, Internet of Things Alliance was born. It has the support of Department of Information Technology, SRM Institute of Science and Technology, Kattankulathur and is under the guidance of Dr Kayalvizhi Jayavel, Assistant Professor of Department of Information Technology, SRM Institute of Science and Technology, Kattankulathur.</string>
+
+    <string name="howto">Have you ever run very late, hoping your bus would magically arrive like Cinderella\'s carriage? How often do you sit wishing you knew how much longer? We have it all here!\n \n Viewing your Bus: Click \'Show Map\' to view your bus\'s live location. \n \n Bus timings: Go to \'Schedule\' to view the bus timings. \n \n Alerts: Choose the bus stops you want to get notifications for.</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "148197953638",
+    "project_id": "fir-topics-529a2",
+    "storage_bucket": "fir-topics-529a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148197953638:android:2391a1d0f11a202d795da7",
+        "android_client_info": {
+          "package_name": "com.iota.enroute"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148197953638-ia8lo9aeid18g6j70loeu3ug93p3v6lr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6MMptV5BWIpi1BvDBOHYKMRYn8QJq2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148197953638-ia8lo9aeid18g6j70loeu3ug93p3v6lr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

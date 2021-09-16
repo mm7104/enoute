@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iota.enroute">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.iota.enroute.HowToUse" />
+        <activity android:name="com.iota.enroute.aboutUs" />
+        <activity android:name="com.iota.enroute.ForgotPassword" />
+        <activity android:name="com.iota.enroute.Alerts" />
+        <activity android:name="com.iota.enroute.Schedule" />
+        <activity android:name="com.iota.enroute.mapbox" />
+        <activity android:name="com.iota.enroute.ChooseBus" />
+        <activity android:name="com.iota.enroute.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.iota.enroute.Register" />
+    </application>
+
+
+</manifest>

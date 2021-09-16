@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapbox">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/navBlack"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:fitsSystemWindows="true"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EnRoute"
+            android:textSize="23dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:layout_constraintTop_toTopOf="@+id/relativeLayout"
+        mapbox:mapbox_cameraTargetLat="12.8259"
+        mapbox:mapbox_cameraTargetLng="80.0395"
+        mapbox:mapbox_cameraZoom="22"
+        mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Content Container -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/currLocButton"
+            android:layout_width="54dp"
+            android:layout_height="64dp"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_alignEnd="@+id/bottom_navigation"
+            android:layout_alignRight="@+id/bottom_navigation"
+            android:layout_gravity="end|bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="39dp"
+            android:background="@color/navBlack"
+            android:src="@drawable/ic_current_loc"
+            app:backgroundTint="@color/navBlack"
+            app:layout_constraintVertical_bias="0.788" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/busLocButton"
+            android:layout_width="54dp"
+            android:layout_height="64dp"
+            android:layout_above="@+id/currLocButton"
+            android:layout_alignEnd="@+id/bottom_navigation"
+            android:layout_alignRight="@+id/bottom_navigation"
+            android:layout_gravity="end|bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/navBlack"
+            android:src="@drawable/ic_bus_schedule"
+            app:backgroundTint="@color/navBlack"
+            app:layout_constraintVertical_bias="0.788" />
+
+        <TextView
+            android:id="@+id/busLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginRight="118dp"
+            android:background="#000"
+            android:paddingTop="5dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-6dp"
+            mapbox:itemBackground="@color/navBlack"
+            mapbox:itemIconTint="@color/mapboxWhite"
+            mapbox:itemTextColor="@color/mapboxWhite"
+            mapbox:menu="@menu/navigation" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

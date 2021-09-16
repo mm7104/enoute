@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mapbox">
+
+    <item android:id="@+id/aboutUs"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="About Us" />
+
+    <item android:id="@+id/howToUse"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="How to Use"/>
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Logout"/>
+
+</menu>
